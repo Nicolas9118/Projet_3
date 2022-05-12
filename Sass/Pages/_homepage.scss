@@ -1,22 +1,22 @@
 .discovery{
     display: flex;
     flex-direction: column;
-}
 
-.where{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 15px 0;
-
-    background-color: $colour-fond-where;
-    box-shadow: inset 0px 10px 10px -10px grey;
-
-    font-weight: bold;
-    font-size: 18px;
-
-    p{
-        margin: 0 15px;
+    &__where{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 15px 0;
+    
+        background-color: $colour-fond-where;
+        box-shadow: inset 0px 10px 10px -10px grey;
+    
+        font-weight: bold;
+        font-size: 18px;
+    
+        p{
+            margin: 0 15px;
+        }
     }
 }
 
@@ -33,6 +33,7 @@
 
     &__title{
         font-size: 24px;
+        font-weight: bold;
         margin: 30px 0 7px 0;
     }
 
@@ -40,4 +41,10 @@
         margin: 7px 0 15px 0;
         color: $colour-font-grey;
     }
+}
+
+.function{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }

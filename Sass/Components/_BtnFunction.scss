@@ -1,0 +1,45 @@
+.BtnFunction{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 325px;
+    height: 75px;
+    border-radius: 25px;
+    background: $colour-fond;
+    box-shadow: 4px 4px 4px $colour-fond-where;
+    margin: 20px 0;
+
+    font-size: 18px;
+    font-weight: bold;
+
+    position: relative;
+
+    counter-increment: counterlist 1;
+
+    i{
+        margin: 0 20px 0 -20px;
+    }
+
+    &--3 i{
+        color: $colour-primary;
+    }
+
+    &::before{
+        content: counter(counterlist);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 30px;
+        height: 30px;
+        border-radius: 100%;
+        background: $colour-primary;
+        color: #FFF;
+        font-weight: 500;
+
+
+        position: absolute;
+        top: 50%;
+        left: 0%;
+        transform: translate(-50%, -50%);
+    }
+}

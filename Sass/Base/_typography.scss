@@ -10,3 +10,20 @@ a{
     text-decoration: none;
     color: black;
 }
+
+ol{
+    list-style: none;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.sectiontitle{
+    font-size: 24px;
+    font-weight: bold;
+    width: 325px;
+
+    margin: 30px 0;
+}
