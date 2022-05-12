@@ -56,4 +56,27 @@
             transition: all 1s;
         }
     }
+
+    @media  (min-width : 992px){
+        width: 446px;
+        height: 325px;
+        margin-bottom: 50px;
+
+        img{
+            height: 225px;
+        }
+
+        .cardTitle{
+            height: 100px;
+            font-size: 22px;
+        
+            &__town{
+                font-size: 20px;
+            }
+    
+            &__right{
+                font-size: 28px;
+            }
+        }
+    }
 }

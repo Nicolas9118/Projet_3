@@ -41,18 +41,56 @@
         margin: 7px 0 15px 0;
         color: $colour-font-grey;
     }
+
+    @media  (min-width : 768px){
+        flex-direction: row;
+        justify-content: space-around;
+
+        .presentation{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+    }
 }
 
 .function{
     display: flex;
     flex-direction: column;
     align-items: center;
+    padding-bottom: 30px;
+
+    &__list{
+        counter-reset: compteListe;
+    }
 }
 
 .restaurant{
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
     background-color: $colour-fond;
+
+    .containCard{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+
+        @media  (min-width : 768px){
+            flex-direction: row;
+            justify-content: space-around;
+
+            &__left{
+                margin: 5px 25px;
+
+            }
+
+            &__right{
+                margin: 5px 25px;
+
+            }
+        }
+    }
 }

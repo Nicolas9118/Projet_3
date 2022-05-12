@@ -3,16 +3,17 @@
 @import url('https://fonts.googleapis.com/css2?family=Shrikhand&display=swap');
 
 /*  ----  Import des fichier scss du dossier Utils ----  */
-@import "./utils/variables";
+@import "./utils/Variables";
 
 /*  ----  Import des fichier scss du dossier Base ----  */
-@import "./Base/base";
-@import "./Base/typography";
+@import "./Base/Base";
+@import "./Base/Typography";
 /*  ----  Import des fichier scss du dossier Components ----  */
 @import "./Components/BtnPrincipal";
 @import "./Components/BtnFunction";
 @import "./Components/CardRestaurant";
 /*  ----  Import des fichier scss du dossier Layout ----  */
-@import"./Layout/header";
+@import "./Layout/Header";
+@import "./Layout/Footer";
 /*  ----  Import des fichier scss du dossier pages ----  */
-@import "./Pages/homepage";
+@import "./Pages/Homepage";
