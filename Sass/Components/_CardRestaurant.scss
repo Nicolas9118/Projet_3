@@ -1,0 +1,59 @@
+.cardRestaurant{
+    display: block;
+    width: 335px;
+    height: 250px;
+    border-radius: 25px;
+    box-shadow: 4px 4px 4px $colour-fond-where;
+    background-color: #FFF;
+    margin-bottom: 25px;
+    position: relative;
+
+    img{
+        object-fit: cover;
+        height: 175px;
+        width: 100%;
+        border-top-left-radius: 25px;
+        border-top-right-radius: 25px;
+    }
+
+    &__badge{
+        background-color: $colour-tertiary;
+        color: darken($color: $colour-tertiary, $amount: 40%);
+        font-weight: bold;
+        padding: 10px;
+        text-align: center;
+        position: absolute;
+        z-index: 99;
+        top: 20px;
+        right: 20px;
+    }
+
+    .cardTitle{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        height: 75px;
+        font-size: 18px;
+        margin: 0 25px 0 15px;
+
+        &__name{
+            font-weight: bold;
+        }
+    
+        &__town{
+            font-size: 16px;
+        }
+
+        &__right{
+            font-size: 24px;
+        }
+
+        &__right:hover{
+            color: transparent; //Pour que la couleur de l'icone soit transparent pour voir la couleur du background
+            background-clip: text; //Pour changer le couleur que de l'icone et non du bloc
+            -webkit-background-clip: text; // Pour que ça fonctionne sur chrome
+            background-image: linear-gradient($colour-primary, $colour-secondary);
+            transition: all 1s;
+        }
+    }
+}
