@@ -1,0 +1,17 @@
+.BtnPrincipal{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 285px;
+    height: 65px;
+    border-radius: 50px;
+    background: linear-gradient($colour-secondary, $colour-primary);
+    box-shadow: 5px 5px 5px grey;
+    color: white;
+    font-weight: 500;
+
+    &:hover{
+        background: linear-gradient(lighten($colour-secondary, 5%), lighten($colour-primary, 5%));
+        box-shadow: 10px 10px 10px lighten(grey, 5%);
+    }
+}

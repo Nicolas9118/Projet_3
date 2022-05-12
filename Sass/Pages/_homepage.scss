@@ -1,0 +1,43 @@
+.discovery{
+    display: flex;
+    flex-direction: column;
+}
+
+.where{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 15px 0;
+
+    background-color: $colour-fond-where;
+    box-shadow: inset 0px 10px 10px -10px grey;
+
+    font-weight: bold;
+    font-size: 18px;
+
+    p{
+        margin: 0 15px;
+    }
+}
+
+.explore{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-size: 20px;
+    padding: 25px 0 50px 0;
+
+    background-color: $colour-fond;
+
+    &__title{
+        font-size: 24px;
+        margin: 30px 0 7px 0;
+    }
+
+    &__undertitle{
+        margin: 7px 0 15px 0;
+        color: $colour-font-grey;
+    }
+}
