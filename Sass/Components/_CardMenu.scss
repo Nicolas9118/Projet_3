@@ -8,8 +8,17 @@
 
     display: flex;
     justify-content: space-between;
-    align-items: flex-end;
-    padding: 10px 20px 10px 10px;
+    align-items: center;
+    position: relative;
+
+    .contain-cardmenu{
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-end;
+        width: 350px;
+        padding: 10px 20px 10px 10px;
+        
+    }
 
     &__title{
         display: flex;
@@ -29,4 +38,72 @@
         color: $colour-fond-footer;
         font-weight: bold;
     }
+
+    .choicemenu{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 60px;
+        height: 60px;
+        color: #FFF;
+        background: $colour-tertiary;
+        border-top-right-radius: 10px;
+        border-bottom-right-radius: 10px;
+        font-size: 22px;
+        font-weight: bold;
+        position: absolute;
+        right: 0px;
+        opacity: 0;
+        
+    }
+
+    &:hover{
+        .cardmenu__price{
+            transform: translateX(-60px);
+            transition: all 0.8s ease-in-out;
+        }
+
+        .choicemenu{
+            transform-origin: top right;
+            animation: valid 0.8s ease-in-out;
+            opacity: 1;
+
+
+            @keyframes valid {
+                0%{
+                    
+                    transform: scaleX(0%);
+                    
+                }
+                100%{
+                    transform: scaleX(100%);
+                    
+                }
+            }
+
+            i{
+                animation: spinvalid 0.8s ease-in-out;
+
+                @keyframes spinvalid {
+                    from{
+                        transform: rotate(0deg);
+                    }
+                    to{
+                        transform: rotate(360deg);
+                    }
+                }
+            }
+
+        }
+
+        .cardmenu__title{
+            &--overtitle, &--undertitle{
+                width: 210px;
+                white-space: nowrap;
+                text-overflow: ellipsis; 
+                overflow: hidden;
+            } 
+        }
+    }
+
 }
