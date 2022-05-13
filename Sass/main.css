@@ -11,9 +11,9 @@
 }
 
 body {
-  /*max-width: 768px;*/
+  max-width: 768px;
   /*max-width: 375px;*/
-  max-width: 1440px;
+  /*max-width: 1440px;*/
   min-width: 375px;
   padding-right: 5px;
   padding-left: 5px;
@@ -66,6 +66,21 @@ ol {
   .sectiontitle {
     text-align: center;
   }
+}
+
+.bigtitle {
+  width: 350px;
+  margin: 0 auto;
+  font-size: 20px;
+  text-transform: uppercase;
+}
+
+.bigtitle .underbarre {
+  display: block;
+  height: 5px;
+  width: 70px;
+  background-color: #99E2D0;
+  margin-top: 5px;
 }
 
 /*  ----  Import des fichier scss du dossier Components ----  */
@@ -440,6 +455,49 @@ ol {
   }
 }
 
+.cardmenu {
+  width: 350px;
+  height: 60px;
+  background-color: #FFF;
+  border-radius: 15px;
+  -webkit-box-shadow: 5px 5px 5px grey;
+          box-shadow: 5px 5px 5px grey;
+  margin: 20px auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  padding: 10px 20px 10px 10px;
+}
+
+.cardmenu__title {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  font-weight: bold;
+  font-size: 18px;
+}
+
+.cardmenu__title--undertitle {
+  font-weight: 400;
+  font-size: 14px;
+  margin-top: 3px;
+}
+
+.cardmenu__price {
+  color: #353535;
+  font-weight: bold;
+}
+
 /*  ----  Import des fichier scss du dossier Layout ----  */
 header {
   display: -webkit-box;
@@ -690,5 +748,55 @@ footer .list__link {
   .restaurant .containCard__right {
     margin: 5px 25px;
   }
+}
+
+.Imghero {
+  width: 100%;
+  height: 350px;
+  z-index: -1;
+  position: relative;
+}
+
+.menu {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background: #EAEAEA;
+  width: 100%;
+  border-top-left-radius: 50px;
+  border-top-right-radius: 50px;
+  margin-top: -50px;
+  padding-bottom: 30px;
+  z-index: 99;
+  position: relative;
+}
+
+.menu__header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 20px 0;
+}
+
+.menu__header i {
+  font-size: 28px;
+  margin-left: 20px;
+}
+
+.menu__contain .meal {
+  margin: 50px 0;
 }
 /*# sourceMappingURL=main.css.map */

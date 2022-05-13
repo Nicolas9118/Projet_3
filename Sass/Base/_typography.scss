@@ -34,3 +34,18 @@ ol{
         text-align: center;
     }
 }
+
+.bigtitle{
+    width: 350px;
+    margin: 0 auto;
+    font-size: 20px;
+    text-transform: uppercase;
+
+    .underbarre{
+        display: block;
+        height: 5px;
+        width: 70px;
+        background-color: $colour-tertiary;
+        margin-top: 5px;
+    }
+}
