@@ -4,11 +4,13 @@
 
 /*  ----  Import des fichier scss du dossier Utils ----  */
 @import "./utils/Variables";
+@import "./Utils/Mixins";
 
 /*  ----  Import des fichier scss du dossier Base ----  */
 @import "./Base/Base";
 @import "./Base/Typography";
 /*  ----  Import des fichier scss du dossier Components ----  */
+@import "./Components/Loader";
 @import "./Components/BtnPrincipal";
 @import "./Components/BtnFunction";
 @import "./Components/CardRestaurant";

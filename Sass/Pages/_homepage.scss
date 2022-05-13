@@ -1,3 +1,7 @@
+.afterloader{
+    @include fadein;
+}
+
 .discovery{
     display: flex;
     flex-direction: column;

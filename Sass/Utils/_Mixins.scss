@@ -1,0 +1,142 @@
+@mixin fadein {
+    animation: fadein 10s linear;
+    animation-fill-mode: forwards;
+
+    @keyframes fadein {
+        0%{
+            opacity: 0;
+        }
+        90%{
+            opacity: 0;
+        }
+        100%{
+            opacity: 1;
+        }
+        
+    }
+}
+
+@mixin loading {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    max-width: 1440px;
+    background: $colour-fond-where;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+
+    animation: fadeout 10s linear;
+    animation-fill-mode: forwards;
+
+    @keyframes fadeout {
+        0%{
+            opacity: 1;
+        }
+        90%{
+            opacity: 1;
+        }
+        100%{
+            opacity: 0;
+        }     
+    }
+    
+
+    p, i{
+        margin: 10px;
+        font-size: 64px;
+        color: $colour-fond-footer;
+
+        animation: bounce 1.2s ease-in-out infinite alternate;
+    }
+
+    @keyframes bounce {
+        0%{
+            transform: translateX(0%);
+        }
+        
+        50%{
+            transform: translateX(75%);
+        }
+
+        100%{
+            transform: translateX(-75%);
+        }
+    }
+
+    .lettercolor1{
+        color: $colour-primary;
+    }
+    
+    .lettercolor2{
+        color: $colour-secondary;
+    }
+
+    .lettercolor3{
+        color: $colour-tertiary;
+    }
+
+    .bounce1{
+        animation-delay: 0.1s;
+    }
+
+    .bounce2{
+        animation-delay: 0.2s;
+    }
+
+    .bounce3{
+        animation-delay: 0.3s;
+    }
+
+    .bounce4{
+        animation-delay: 0.4s;
+    }
+
+    .bounce5{
+        animation-delay: 0.5s;
+    }
+
+    .bounce6{
+        animation-delay: 0.6s;
+    }
+
+    .bounce7{
+        animation-delay: 0.7s;
+    }
+
+    .bounce8{
+        animation-delay: 0.8s;
+    }
+
+    .bounce9{
+        animation-delay: 0.9s;
+    }
+
+    .bounce10{
+        animation-delay: 1.0s;
+    }
+
+    .bounce11{
+        animation-delay: 1.1s;
+    }
+
+    .bounce12{
+        animation-delay: 1.2s;
+    }
+
+    @media (min-width : 768px) {
+        flex-direction: row;
+
+        @keyframes bounce {
+            from{
+                transform: translateY(0%);
+            }
+
+            to{
+                transform: translateY(-75%);
+            }
+        }
+    }
+}
