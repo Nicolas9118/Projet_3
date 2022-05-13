@@ -48,4 +48,8 @@ ol{
         background-color: $colour-tertiary;
         margin-top: 5px;
     }
+
+    @media  (min-width : 992px){
+        justify-content: center;
+    }
 }

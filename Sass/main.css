@@ -11,9 +11,7 @@
 }
 
 body {
-  max-width: 768px;
-  /*max-width: 375px;*/
-  /*max-width: 1440px;*/
+  max-width: 1440px;
   min-width: 375px;
   padding-right: 5px;
   padding-left: 5px;
@@ -81,6 +79,14 @@ ol {
   width: 70px;
   background-color: #99E2D0;
   margin-top: 5px;
+}
+
+@media (min-width: 992px) {
+  .bigtitle {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
 }
 
 /*  ----  Import des fichier scss du dossier Components ----  */
@@ -480,19 +486,24 @@ ol {
           animation-fill-mode: forwards;
 }
 
+.cardmenu--15 {
+  -webkit-animation-delay: 0.1s;
+          animation-delay: 0.1s;
+}
+
 .cardmenu--2 {
   -webkit-animation-delay: 0.2s;
           animation-delay: 0.2s;
 }
 
+.cardmenu--25 {
+  -webkit-animation-delay: 0.3s;
+          animation-delay: 0.3s;
+}
+
 .cardmenu--3 {
   -webkit-animation-delay: 0.4s;
           animation-delay: 0.4s;
-}
-
-.cardmenu--4 {
-  -webkit-animation-delay: 0.6s;
-          animation-delay: 0.6s;
 }
 
 @-webkit-keyframes appear {
@@ -668,6 +679,36 @@ ol {
   white-space: nowrap;
   text-overflow: ellipsis;
   overflow: hidden;
+}
+
+@media (min-width: 768px) {
+  .cardmenu--1 {
+    margin-left: -50%;
+  }
+  .cardmenu--15 {
+    margin-left: -35%;
+  }
+  .cardmenu--25 {
+    margin-left: 35%;
+  }
+  .cardmenu--3 {
+    margin-left: 50%;
+  }
+}
+
+@media (min-width: 992px) {
+  .cardmenu--1 {
+    margin-left: -25%;
+  }
+  .cardmenu--15 {
+    margin-left: -15%;
+  }
+  .cardmenu--25 {
+    margin-left: 15%;
+  }
+  .cardmenu--3 {
+    margin-left: 25%;
+  }
 }
 
 /*  ----  Import des fichier scss du dossier Layout ----  */
@@ -925,6 +966,8 @@ footer .list__link {
 .Imghero {
   width: 100%;
   height: 350px;
+  -o-object-fit: cover;
+     object-fit: cover;
   z-index: -1;
   position: relative;
 }
@@ -970,5 +1013,21 @@ footer .list__link {
 
 .menu__contain .meal {
   margin: 50px 0;
+}
+
+@media (min-width: 992px) {
+  .menu__contain {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .menu__contain .meal {
+    margin: 25px 40px;
+  }
 }
 /*# sourceMappingURL=main.css.map */
