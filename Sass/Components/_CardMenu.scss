@@ -11,6 +11,38 @@
     align-items: center;
     position: relative;
 
+    opacity: 0;
+    animation: appear 1.5s linear;
+    animation-fill-mode: forwards;
+
+    &--2{
+        animation-delay: 0.2s;
+    }
+    &--3{
+        animation-delay: 0.4s;
+    }
+    &--4{
+        animation-delay: 0.6s;
+    }
+
+    @keyframes appear {
+        0%{
+            transform: translateY(75%);
+        }
+        25%{
+            transform: translateY(50%);
+        }
+        50%{
+            transform: translateY(25%);
+        }
+        75%{
+            transform: translateY(0);
+        }
+        100%{
+            opacity: 1;
+        }
+    }
+
     .contain-cardmenu{
         display: flex;
         justify-content: space-between;
