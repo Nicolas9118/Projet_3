@@ -158,16 +158,16 @@
 
     @media  (min-width : 992px){
         &--1{
-            margin-left: -25%;
-        }
-        &--15{
             margin-left: -15%;
         }
+        &--15{
+            margin-left: -5%;
+        }
         &--25{
-            margin-left: 15%;
+            margin-left: 5%;
         }
         &--3{
-            margin-left: 25%;
+            margin-left: 15%;
         }
     }
 }

@@ -698,16 +698,16 @@ ol {
 
 @media (min-width: 992px) {
   .cardmenu--1 {
-    margin-left: -25%;
-  }
-  .cardmenu--15 {
     margin-left: -15%;
   }
+  .cardmenu--15 {
+    margin-left: -5%;
+  }
   .cardmenu--25 {
-    margin-left: 15%;
+    margin-left: 5%;
   }
   .cardmenu--3 {
-    margin-left: 25%;
+    margin-left: 15%;
   }
 }
 
