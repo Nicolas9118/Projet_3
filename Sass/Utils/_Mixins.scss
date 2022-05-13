@@ -1,5 +1,5 @@
 @mixin fadein {
-    animation: fadein 10s linear;
+    animation: fadein 4s linear;
     animation-fill-mode: forwards;
 
     @keyframes fadein {
@@ -28,7 +28,7 @@
     align-items: center;
 
 
-    animation: fadeout 10s linear;
+    animation: fadeout 4s linear;
     animation-fill-mode: forwards;
 
     @keyframes fadeout {

@@ -88,8 +88,8 @@ ol {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  -webkit-animation: fadeout 10s linear;
-          animation: fadeout 10s linear;
+  -webkit-animation: fadeout 4s linear;
+          animation: fadeout 4s linear;
   -webkit-animation-fill-mode: forwards;
           animation-fill-mode: forwards;
 }
@@ -510,8 +510,8 @@ footer .list__link {
 
 /*  ----  Import des fichier scss du dossier pages ----  */
 .afterloader {
-  -webkit-animation: fadein 10s linear;
-          animation: fadein 10s linear;
+  -webkit-animation: fadein 4s linear;
+          animation: fadein 4s linear;
   -webkit-animation-fill-mode: forwards;
           animation-fill-mode: forwards;
 }
