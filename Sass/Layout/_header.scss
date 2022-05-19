@@ -1,9 +1,15 @@
-header{
+.header{
     display: flex;
-    justify-content: center;
+    justify-content: flex-start;
+    align-items: center;
+
+    &__return{
+        font-size: 20px;
+        color: $colour-fond-footer;
+    }
 
     img{
         width: 200px;
-        margin: 15px 0;
+        margin: 15px auto;
     }
 }

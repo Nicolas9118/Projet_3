@@ -8,6 +8,11 @@
     margin-bottom: 25px;
     position: relative;
 
+    &:hover{
+        transform: scale(1.1);
+        transition: all 0.5s linear;
+    }
+
     img{
         object-fit: cover;
         height: 175px;
@@ -26,6 +31,7 @@
         z-index: 99;
         top: 20px;
         right: 20px;
+
     }
 
     .cardTitle{
@@ -45,15 +51,20 @@
         }
 
         &__right{
+            display: flex;
+            flex-direction: column;
             font-size: 24px;
+            position: relative;
+
+            .full{
+                position: absolute;
+                opacity: 0;
+            }
+            
         }
 
         &__right:hover{
-            color: transparent; //Pour que la couleur de l'icone soit transparent pour voir la couleur du background
-            background-clip: text; //Pour changer le couleur que de l'icone et non du bloc
-            -webkit-background-clip: text; // Pour que ça fonctionne sur chrome
-            background-image: linear-gradient($colour-primary, $colour-secondary);
-            transition: all 1s;
+            @include animheart;
         }
     }
 

@@ -1,5 +1,5 @@
 @mixin fadein {
-    animation: fadein 4s linear;
+    animation: fadein 2s linear;
     animation-fill-mode: forwards;
 
     @keyframes fadein {
@@ -28,7 +28,7 @@
     align-items: center;
 
 
-    animation: fadeout 4s linear;
+    animation: fadeout 2s linear;
     animation-fill-mode: forwards;
 
     @keyframes fadeout {
@@ -139,4 +139,33 @@
             }
         }
     }
+}
+
+@mixin animheart {
+        color: transparent; //Pour que la couleur de l'icone soit transparent pour voir la couleur du background
+        background-clip: text; //Pour changer le couleur que de l'icone et non du bloc
+        -webkit-background-clip: text; // Pour que ça fonctionne sur chrome
+        background-image: linear-gradient($colour-primary, $colour-secondary);
+        transition: all 1s;  
+        overflow: hidden;
+        
+        .full{
+            color: transparent; //Pour que la couleur de l'icone soit transparent pour voir la couleur du background
+            background-clip: text; //Pour changer le couleur que de l'icone et non du bloc
+            -webkit-background-clip: text; // Pour que ça fonctionne sur chrome
+            background-image: linear-gradient($colour-primary, $colour-secondary);
+            transform-origin: bottom right;
+            animation: heart 0.8s linear;
+            animation-fill-mode: forwards;
+            opacity: 1;
+
+            @keyframes heart {
+                0%{
+                    transform: scaleY(0%);
+                }
+                100%{
+                    transform: scaleY(100%);
+                }
+            }
+        }
 }
