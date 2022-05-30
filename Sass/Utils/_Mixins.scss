@@ -21,7 +21,7 @@
     width: 100%;
     height: 100%;
     max-width: 1440px;
-    background: $colour-fond-where;
+    background: $colour-bg-where;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -47,7 +47,7 @@
     p, i{
         margin: 10px;
         font-size: 64px;
-        color: $colour-fond-footer;
+        color: $colour-bg-footer;
 
         animation: bounce 1.2s ease-in-out infinite alternate;
     }
