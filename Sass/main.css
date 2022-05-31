@@ -27,6 +27,10 @@ h1 {
   font-family: 'Shrikhand', sans-serif;
 }
 
+.titlerestaurant {
+  font-size: 26px;
+}
+
 a {
   text-decoration: none;
   color: black;
@@ -57,7 +61,7 @@ ol {
   font-size: 24px;
   font-weight: bold;
   width: 325px;
-  margin: 30px 0;
+  margin: 30px 0 15px 0;
 }
 
 @media (min-width: 768px) {
@@ -69,7 +73,7 @@ ol {
 .bigtitle {
   width: 350px;
   margin: 0 auto;
-  font-size: 20px;
+  font-size: 16px;
   text-transform: uppercase;
 }
 
@@ -141,7 +145,7 @@ ol {
 
 .loader p, .loader i {
   margin: 10px;
-  font-size: 64px;
+  font-size: 36px;
   color: #353535;
   -webkit-animation: bounce 1.2s ease-in-out infinite alternate;
           animation: bounce 1.2s ease-in-out infinite alternate;
@@ -235,8 +239,8 @@ ol {
 }
 
 .loader .letter:nth-child(10) {
-  -webkit-animation-delay: 1.0s;
-          animation-delay: 1.0s;
+  -webkit-animation-delay: 1s;
+          animation-delay: 1s;
 }
 
 .loader .letter:nth-child(11) {
@@ -255,6 +259,9 @@ ol {
     -webkit-box-direction: normal;
         -ms-flex-direction: row;
             flex-direction: row;
+  }
+  .loader p, .loader i {
+    font-size: 60px;
   }
   @-webkit-keyframes bounce {
     from {
@@ -288,8 +295,8 @@ ol {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  width: 285px;
-  height: 65px;
+  width: 250px;
+  height: 55px;
   border-radius: 50px;
   background: -webkit-gradient(linear, left top, left bottom, from(#FF79DA), to(#9356DC));
   background: linear-gradient(#FF79DA, #9356DC);
@@ -297,6 +304,7 @@ ol {
           box-shadow: 5px 5px 5px grey;
   color: white;
   font-weight: 500;
+  font-size: 18px;
 }
 
 .BtnPrincipal:hover {
@@ -333,7 +341,11 @@ ol {
   margin: 0 20px 0 -20px;
 }
 
-.BtnFunction--3 i {
+.BtnFunction:hover {
+  background-color: #f2eafb;
+}
+
+.BtnFunction:hover i {
   color: #9356DC;
 }
 
@@ -401,6 +413,7 @@ ol {
 .cardRestaurant__badge {
   background-color: #99E2D0;
   color: #278870;
+  border-radius: 3px;
   font-weight: bold;
   padding: 10px;
   text-align: center;
@@ -478,23 +491,23 @@ ol {
 
 @-webkit-keyframes heart {
   0% {
-    -webkit-transform: scaleY(0%);
-            transform: scaleY(0%);
+    -webkit-transform: scaleY(0);
+            transform: scaleY(0);
   }
   100% {
-    -webkit-transform: scaleY(100%);
-            transform: scaleY(100%);
+    -webkit-transform: scaleY(1);
+            transform: scaleY(1);
   }
 }
 
 @keyframes heart {
   0% {
-    -webkit-transform: scaleY(0%);
-            transform: scaleY(0%);
+    -webkit-transform: scaleY(0);
+            transform: scaleY(0);
   }
   100% {
-    -webkit-transform: scaleY(100%);
-            transform: scaleY(100%);
+    -webkit-transform: scaleY(1);
+            transform: scaleY(1);
   }
 }
 
@@ -544,22 +557,22 @@ ol {
           animation-fill-mode: forwards;
 }
 
-.cardmenu--15 {
+.cardmenu:nth-child(1) {
   -webkit-animation-delay: 0.1s;
           animation-delay: 0.1s;
 }
 
-.cardmenu--2 {
+.cardmenu:nth-child(2) {
   -webkit-animation-delay: 0.2s;
           animation-delay: 0.2s;
 }
 
-.cardmenu--25 {
+.cardmenu:nth-child(3) {
   -webkit-animation-delay: 0.3s;
           animation-delay: 0.3s;
 }
 
-.cardmenu--3 {
+.cardmenu:nth-child(4) {
   -webkit-animation-delay: 0.4s;
           animation-delay: 0.4s;
 }
@@ -685,23 +698,23 @@ ol {
 
 @-webkit-keyframes valid {
   0% {
-    -webkit-transform: scaleX(0%);
-            transform: scaleX(0%);
+    -webkit-transform: scaleX(0);
+            transform: scaleX(0);
   }
   100% {
-    -webkit-transform: scaleX(100%);
-            transform: scaleX(100%);
+    -webkit-transform: scaleX(1);
+            transform: scaleX(1);
   }
 }
 
 @keyframes valid {
   0% {
-    -webkit-transform: scaleX(0%);
-            transform: scaleX(0%);
+    -webkit-transform: scaleX(0);
+            transform: scaleX(0);
   }
   100% {
-    -webkit-transform: scaleX(100%);
-            transform: scaleX(100%);
+    -webkit-transform: scaleX(1);
+            transform: scaleX(1);
   }
 }
 
@@ -1118,12 +1131,12 @@ footer .list__link {
 
 @keyframes heart {
   0% {
-    -webkit-transform: scaleY(0%);
-            transform: scaleY(0%);
+    -webkit-transform: scaleY(0);
+            transform: scaleY(0);
   }
   100% {
-    -webkit-transform: scaleY(100%);
-            transform: scaleY(100%);
+    -webkit-transform: scaleY(1);
+            transform: scaleY(1);
   }
 }
 

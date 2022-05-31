@@ -2,13 +2,14 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 285px;
-    height: 65px;
+    width: 250px;
+    height: 55px;
     border-radius: 50px;
     background: linear-gradient($colour-secondary, $colour-primary);
     box-shadow: 5px 5px 5px grey;
     color: white;
     font-weight: 500;
+    font-size: 18px;
 
     &:hover{
         background: linear-gradient(lighten($colour-secondary, 5%), lighten($colour-primary, 5%));

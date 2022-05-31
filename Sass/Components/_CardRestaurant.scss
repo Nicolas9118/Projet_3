@@ -24,6 +24,7 @@
     &__badge{
         background-color: $colour-tertiary;
         color: darken($color: $colour-tertiary, $amount: 40%);
+        border-radius: 3px;
         font-weight: bold;
         padding: 10px;
         text-align: center;

@@ -16,17 +16,10 @@
     animation-fill-mode: forwards;
     
 
-    &--15{
-        animation-delay: 0.1s;
-    }
-    &--2{
-        animation-delay: 0.2s;
-    }
-    &--25{
-        animation-delay: 0.3s;
-    }
-    &--3{
-        animation-delay: 0.4s;
+    @for $i from 1 through 4{
+        &:nth-child(#{$i}){
+            animation-delay: 0.1s * $i;
+        }
     }
 
     @keyframes appear {
@@ -107,11 +100,11 @@
             @keyframes valid {
                 0%{
                     
-                    transform: scaleX(0%);
+                    transform: scaleX(0);
                     
                 }
                 100%{
-                    transform: scaleX(100%);
+                    transform: scaleX(1);
                     
                 }
             }
